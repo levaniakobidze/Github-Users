@@ -5,9 +5,153 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:  hsl(235, 21%, 11%);
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-wrapper {
+  max-width: 81rem;
+  margin: 0 auto;
+}
+.input-cont {
+  margin: 0 auto;
+  width: 450px;
+  margin-top:100px;
+}
+.input-cont input {
+  width: 100%;
+  padding: 10px;
+  color:rgb(97, 95, 95) ;
+  height: 30px;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  background-color:  hsl(235, 24%, 19%);
+  box-shadow:    5px 5px 10px  hsl(0, 0%, 0%);  
+ 
+}
+
+.input-cont input:focus {
+  box-shadow:    8px 8px 10px  hsl(0, 0%, 0%); 
+  transition: all 0.5s; 
+}
+::placeholder {
+  color:rgb(97, 95, 95);
+  padding-left:4px;
+  
+}
+
+.cards-wrapper {
+margin: 0 auto;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+align-items: center;
+width: 100%;
+margin-top: 0px;
+
+}
+.cards-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.image {
+  width: 100%;
+  height: 220px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.image img {
+  width: 93%;
+  border-radius: 50%;
+}
+.card-cont {
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 20px;
+  width: 260px;
+  margin-top: 50px;
+  cursor: pointer;
+  box-shadow:    5px 5px 10px  hsl(0, 0%, 0%);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.card-cont:hover {
+box-shadow:    15px 15px 10px  hsl(0, 0%, 0%);
+transition: all .5s;
+}
+
+.card-info {
+display: flex;
+justify-content: center;
+}
+.link  {
+  text-decoration: none;
+  color: aliceblue; 
+}
+.card-info h1 {
+  text-transform: capitalize;
+  font-size: 25px;
+  padding: 10px;
+}
+.underline {
+  background-color:  hsl(235, 24%, 19%);
+  width: 100%;
+  height:3px;
+  margin-top: 50px;
+  border-radius: 50%;
+}
+
+
+
+
+@media (max-width:750px) {
+  .input-cont {
+    width:400px;
+    margin:20px auto;
+  }
+
+  .input-cont input {
+    height: 20px;
+  }
+
+}
+
+
+
+@media (max-width:650px) {
+  .input-cont {
+    width:350px;
+    margin:20px auto;
+  }
+
+}
+
+
+
+
+
+
+@media (max-width:550px) {
+  .input-cont {
+    width:285px;
+    margin:20px auto;
+  }
+  .cards-wrapper {
+    justify-content: center;
+    align-items: center ;
+  }
+  .input-cont input {
+    height: 13px;
+  }
+}
+
+
