@@ -1,60 +1,48 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: hsl(235, 24%, 19%);
-    align-items: center;
-    padding: 5px;
-    box-shadow:    3px 3px 5px  hsl(0, 0%, 0%); 
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(235, 24%, 19%);
+  align-items: center;
+  padding: 5px 17px;
+  height: 70px;
+  box-shadow: 3px 3px 5px hsl(0, 0%, 0%);
 }
 .navbar-content {
-    width: 81rem;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  width: 81rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo-cont {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-
-    
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .logo-cont h1 {
-    font-size: 20px;
-    padding: 3px;
+  font-size: 20px;
+  padding: 3px;
 }
 .logo {
-    font-size: 30px;
+  font-size: 30px;
 }
 .navigation li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right:20px;
-    cursor:pointer;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
 }
 .home-logo {
-font-size: 15px;
-margin-right: 7px;
-color: #fff;
+  font-size: 15px;
+  margin-right: 7px;
+  color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-@media  (max-width:550px) {
-    .navigation {
-        display:none;
-    }
+@media (max-width: 550px) {
+  .navigation {
+    display: none;
+  }
 }
